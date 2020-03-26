@@ -1,0 +1,7 @@
+- id: inject-issue-name
+  name: 'Insert issue name into commit-message'
+  description: 'This hook inserts issue name part from branch name into end of commit-message'
+  entry: pre-commit-inject-issue-name
+  stages: [prepare-commit-msg]
+  language: python
+  language_version: python3
