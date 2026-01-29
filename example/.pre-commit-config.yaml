@@ -3,3 +3,4 @@ repos:
     rev: master
     hooks:
     - id: inject-issue-name
+      args: [--branch-name-regex, '(:?feature|hotfix|bugfix|chore|release)/(?P<issue_id>\d+)-.+', --msg-template, '{msg} {issue_id}']
